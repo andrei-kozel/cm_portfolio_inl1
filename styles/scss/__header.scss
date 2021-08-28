@@ -1,0 +1,76 @@
+.header {
+  position: relative;
+  height: 100vh;
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  overflow: hidden;
+
+  &-title {
+    font-size: 3.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 3px;
+      height: 60%;
+      background-color: #333;
+      bottom: 15%;
+      right: -8px;
+      animation: blink 1s linear infinite;
+    }
+  }
+  &-subtitle {
+    font-size: 2rem;
+    color: #555;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    &-title {
+      font-size: 5rem;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    &-title {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    &-title {
+      font-size: 1.5rem;
+    }
+    &-subtitle {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

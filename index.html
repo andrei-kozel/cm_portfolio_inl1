@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="./scripts/wordtyper.js"></script>
+    <title>Andrei Kozel The Developer</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header" id="home">
+      <div class="open">
+        <div class="span-container">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <nav class="navigation">
+        <div class="navigation-close close">
+          <img src="./images/close.svg" alt="close icon" />
+        </div>
+        <ul>
+          <li>
+            <a class="link" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="link" href="#about">About Me</a>
+          </li>
+          <li>
+            <a class="link" href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a class="link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="header-title">
+        <!-- &nbsp; - extra space -->
+        Andrei Kozel The&nbsp;
+        <span
+          class="text-to-type"
+          data-wait="3000"
+          data-words='["Developer", "Designer", "Human"]'
+        ></span>
+      </h1>
+      <h2 class="header-subtitle">Welcome to my website!</h2>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="title">About</h2>
+        <h2 class="title title-stroke">Me</h2>
+        <h3 class="about-subtitle">
+          I manufacture a hard copy of your dreams and stories.
+        </h3>
+
+        <div class="row">
+          <h2 class="row-title">Who am I?</h2>
+          <div class="row-content">
+            <p>
+              I am a web developer and designer from Gothenburg, the
+              second-largest city in Sweden. I enjoy building everything from
+              small business sites to rich interactive apps. I primarily use
+              Vue.js and Nuxt.js. If you are interested in working with me, I am
+              currently open to new opportunities. I can solve some of your
+              problems :)
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <h2 class="row-title">My Services</h2>
+          <div class="row-content">
+            <button class="accordion">
+              Web Development <span>&#10094;</span>
+            </button>
+            <div class="accordion-panel">
+              <p>
+                For the past 5 years, I've been forming digital products the
+                likes of interactive experiences, corporate websites, e-commerce
+                or mobile apps for agencies all over the world. From research,
+                user flows, sketches, wireframes to final design systems, user
+                interfaces, motion design and brand guidelines.
+              </p>
+            </div>
+            <hr />
+            <button class="accordion">Web Design <span>&#10094;</span></button>
+            <div class="accordion-panel">
+              <p>
+                For the past 5 years, I've been forming digital products the
+                likes of interactive experiences, corporate websites, e-commerce
+                or mobile apps for agencies all over the world. From research,
+                user flows, sketches, wireframes to final design systems, user
+                interfaces, motion design and brand guidelines.
+              </p>
+            </div>
+            <hr />
+            <button class="accordion">
+              Mobile Development <span>&#10094;</span>
+            </button>
+            <div class="accordion-panel">
+              <p>
+                Web Design For the past 5 years, I've been forming digital
+                products the likes of interactive experiences, corporate
+                websites, e-commerce or mobile apps for agencies all over the
+                world. From research, user flows, sketches, wireframes to final
+                design systems, user interfaces, motion design and brand
+                guidelines.
+              </p>
+            </div>
+            <hr />
+          </div>
+        </div>
+
+        <div class="row">
+          <h2 class="row-title">Our Testimonials</h2>
+          <div class="row-content">
+            <div class="carousel">
+              <div class="carousel-slide fade">
+                <p>
+                  "Not able to tell you how happy I am. I would like to
+                  personally thank you for your outstanding product. Thank you
+                  for making it painless, pleasant and most of all hassle free!"
+                </p>
+                <div class="carousel-slide__name">
+                  Jeff Bezos
+                  <span>CEO of Amazon</span>
+                </div>
+              </div>
+              <div class="carousel-slide fade">
+                <p>
+                  The final Home page is totally what I need. He did a great
+                  job, he is a very professional guy, communication is very
+                  good, about the adjustment he gave a quick response and
+                  modified.
+                </p>
+                <div class="carousel-slide__name">
+                  Mathias Biilmann Christensen
+                  <span>CEO at Netlify</span>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <p>
+                  Great communication. Understood the scope of the job very
+                  well. Highly recommended.
+                </p>
+                <div class="carousel-slide__name">
+                  Elon Musk
+                  <span>CEO of SpaceX</span>
+                </div>
+              </div>
+
+              <a class="carousel-controls carousel-controls__prev prev"
+                >&#10094;</a
+              >
+              <a class="carousel-controls carousel-controls__next next"
+                >&#10095;</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <h2 class="row-title">Our Clients</h2>
+          <div class="row-content row-content-row">
+            <div class="clients-container">
+              <img src="./images/clients/netlify.png" alt="netlify logo" />
+            </div>
+            <div class="clients-container">
+              <img src="./images/clients/amazon.png" alt="amazon logo" />
+            </div>
+
+            <div class="clients-container">
+              <img src="./images/clients/protofire.png" alt="protofire logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT SECTION END -->
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="title">My</h2>
+        <h2 class="title title-stroke">Portfolio</h2>
+      </div>
+      <div class="portfolio-row">
+        <div class="portfolio-column">
+          <img
+            src="./images/portfolio/1.jpg"
+            alt="portfolio example picture 1"
+          />
+          <img
+            src="./images/portfolio/2.jpg"
+            alt="portfolio example picture 2"
+          />
+        </div>
+        <div class="portfolio-column">
+          <img
+            src="./images/portfolio/3.jpg"
+            alt="portfolio example picture 3"
+          />
+          <img
+            src="./images/portfolio/4.jpg"
+            alt="portfolio example picture 4"
+          />
+        </div>
+        <div class="portfolio-column">
+          <img
+            src="./images/portfolio/5.jpg"
+            alt="portfolio example picture 5"
+          />
+          <img
+            src="./images/portfolio/6.jpg"
+            alt="portfolio example picture 6"
+          />
+        </div>
+        <div class="portfolio-column">
+          <img
+            src="./images/portfolio/7.jpg"
+            alt="portfolio example picture 7"
+          />
+          <img
+            src="./images/portfolio/8.jpg"
+            alt="portfolio example picture 8"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- PORTFOLIO SECTION END -->
+
+    <!-- CONTACTS SECTION -->
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <h2 class="title">My</h2>
+        <h2 class="title title-stroke">Contacts</h2>
+        <div class="contacts-content">
+          <div class="contacts-form">
+            <form action="/" method="GET" id="form">
+              <input id="name" type="text" placeholder="Your name" />
+              <p class="error error-name">Name is required</p>
+              <input id="email" type="email" placeholder="Your email" />
+              <p class="error error-email">
+                You have entered an invalid email address!
+              </p>
+              <input id="phone" type="number" placeholder="Your phone" />
+              <p class="error error-phone">
+                You have entered an invalid phone number!
+              </p>
+              <textarea
+                name="text"
+                id="text"
+                cols="30"
+                rows="10"
+                placeholder="Tell me about your project"
+              ></textarea>
+              <input type="submit" value="Send" />
+            </form>
+          </div>
+          <div class="contacts-details">
+            <div class="contacts-details__block">
+              <h2>Say hello:</h2>
+              <a href="">email@gmail.com</a>
+            </div>
+            <div class="contacts-details__block">
+              <h2>Follow Us</h2>
+              <div>
+                <a href="">Twitter</a>
+                <a href="">Facebook</a>
+                <a href="">Instagram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACTS SECTION END -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>©2020 Andrei. All rights reserved.</p>
+    </footer>
+    <!-- FOOTER END -->
+
+    <script src="./scripts/navigation.js"></script>
+    <script src="./scripts/accordion.js"></script>
+    <script src="./scripts/carousel.js"></script>
+    <script src="./scripts/formValidation.js"></script>
+  </body>
+</html>

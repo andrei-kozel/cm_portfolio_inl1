@@ -1,0 +1,66 @@
+.carousel {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+
+  &-slide {
+    display: none;
+    padding: 0 60px;
+    min-height: 100px;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+
+    &__name {
+      margin-top: 20px;
+      font-weight: 700;
+
+      span {
+        color: #777;
+        font-weight: 500;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &-controls {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: auto;
+    margin-top: 10px;
+    font-size: 25px;
+    line-height: 25px;
+    color: #75a99d;
+    width: 50px;
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: #eee;
+    }
+
+    &__prev {
+      left: 0;
+    }
+    &__next {
+      right: 0;
+    }
+  }
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

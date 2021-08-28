@@ -1,0 +1,110 @@
+.contacts {
+  margin-bottom: 100px;
+  &-content {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &-form {
+    width: 40%;
+    input,
+    textarea {
+      margin-top: 20px;
+      display: block;
+      border: none;
+      appearance: none;
+      border-radius: 0;
+      letter-spacing: 0;
+      width: 100%;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 46px;
+      height: 46px;
+      background: transparent;
+      outline: none;
+      padding: 0 0 3px;
+      color: #333;
+      border-bottom: 1px solid #c5c5c5;
+    }
+    textarea {
+      height: 100px;
+      line-height: 20px;
+      resize: none;
+    }
+
+    input[type="submit"] {
+      background-color: lighten($color: #75a99d, $amount: 30);
+      border: 1px solid #c3c3c3;
+      color: #333;
+      text-decoration: none;
+      margin: 0 2px;
+      cursor: pointer;
+      width: 30%;
+      margin: 20px auto 0;
+
+      &:hover {
+        background-color: lighten($color: #75a99d, $amount: 20);
+      }
+    }
+  }
+  &-details {
+    width: 40%;
+
+    &__block {
+      margin-top: 30px;
+      h2 {
+        color: #333;
+      }
+      a {
+        text-decoration: none;
+        color: #555;
+        font-weight: 300;
+        border-bottom: 3px solid #75a99d;
+        border-width: 0px;
+        transition: all 0.1s ease-in-out;
+        margin-right: 4px;
+        &:hover {
+          border-width: 3px;
+        }
+      }
+    }
+  }
+}
+
+.error {
+  margin-top: 2px;
+  visibility: hidden;
+  color: red;
+}
+
+@media screen and (max-width: 800px) {
+  .contacts {
+    &-content {
+      flex-direction: column;
+    }
+    &-form {
+      width: 100%;
+    }
+
+    &-details {
+      margin-top: 50px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+// hide arrows from Phone field
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
